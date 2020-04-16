@@ -36,11 +36,12 @@
                                             <action selector="guessNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bHo-RT-V9L"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="s32-Hw-tbQ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="Image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s32-Hw-tbQ">
                                         <rect key="frame" x="0.0" y="108.33333333333337" width="414" height="320"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="s32-Hw-tbQ" secondAttribute="height" multiplier="207:160" id="jCm-Sa-oNc"/>
                                         </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -67,6 +68,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="908" height="508"/>
+        <image name="Image" width="316" height="344"/>
     </resources>
 </document>
