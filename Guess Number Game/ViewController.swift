@@ -25,6 +25,9 @@ class ViewController: UIViewController, UITextFieldDelegate  {
         textField.resignFirstResponder()
         return true
     }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        guessNumberLabel.text = textField.text
+    }
 //MARK: Actions
 
     @IBAction func guessNumberButton(_ sender: UIButton) {
