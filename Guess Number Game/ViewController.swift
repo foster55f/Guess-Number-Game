@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITextFieldDelegate  {
     
     @IBOutlet weak var guessTextField: UITextField!
     @IBOutlet weak var guessNumberLabel: UILabel!
+    @IBOutlet weak var guessLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,12 +27,12 @@ class ViewController: UIViewController, UITextFieldDelegate  {
         return true
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
-        guessNumberLabel.text = textField.text
+        guessLabel.text = textField.text
     }
 //MARK: Actions
 
     @IBAction func guessNumberButton(_ sender: UIButton) {
-        guessNumberLabel.text = "Foster is doing something"
+//        guessNumberLabel.text = 
     }
 }
 

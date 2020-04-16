@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uPR-tr-opJ">
-                                <rect key="frame" x="0.0" y="63.999999999999972" width="414" height="428.33333333333326"/>
+                                <rect key="frame" x="0.0" y="64.000000000000028" width="414" height="456.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the Number!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoK-r3-5q7">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="20.333333333333332"/>
@@ -29,15 +29,21 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Guess" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uo5-T7-E86">
+                                        <rect key="frame" x="0.0" y="70.333333333333343" width="414" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdM-Nc-xGX">
-                                        <rect key="frame" x="0.0" y="70.333333333333343" width="414" height="30"/>
-                                        <state key="normal" title="One Time Dealer!"/>
+                                        <rect key="frame" x="0.0" y="98.666666666666657" width="414" height="30"/>
+                                        <state key="normal" title="Spin Number Wheel!"/>
                                         <connections>
                                             <action selector="guessNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bHo-RT-V9L"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="Image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s32-Hw-tbQ">
-                                        <rect key="frame" x="0.0" y="108.33333333333337" width="414" height="320"/>
+                                        <rect key="frame" x="0.0" y="136.66666666666663" width="414" height="320"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="s32-Hw-tbQ" secondAttribute="height" multiplier="207:160" id="jCm-Sa-oNc"/>
                                         </constraints>
@@ -58,6 +64,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="guessLabel" destination="Uo5-T7-E86" id="vJ7-pt-oYC"/>
                         <outlet property="guessNumberLabel" destination="PoK-r3-5q7" id="wel-4i-8Ix"/>
                         <outlet property="guessTextField" destination="zbe-Ie-kdy" id="pew-nW-hpc"/>
                     </connections>
