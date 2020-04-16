@@ -32,6 +32,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdM-Nc-xGX">
                                         <rect key="frame" x="0.0" y="70.5" width="414" height="30"/>
                                         <state key="normal" title="One Time Dealer!"/>
+                                        <connections>
+                                            <action selector="guessNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bHo-RT-V9L"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -47,6 +50,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="guessNumberLabel" destination="PoK-r3-5q7" id="wel-4i-8Ix"/>
+                        <outlet property="guessTextField" destination="zbe-Ie-kdy" id="pew-nW-hpc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

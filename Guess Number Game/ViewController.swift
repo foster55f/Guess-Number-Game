@@ -8,14 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate  {
     //MARK: Properties
-
+    
+    @IBOutlet weak var guessTextField: UITextField!
+    @IBOutlet weak var guessNumberLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // Handle the text field’s user input through delegate callbacks.
+        guessTextField.delegate = self
     }
+//MARK: UITextFieldDelegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
+    }
+//MARK: Actions
 
-
+    @IBAction func guessNumberButton(_ sender: UIButton) {
+        guessNumberLabel.text = "Foster is doing something"
+    }
 }
 
